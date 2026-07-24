@@ -1,0 +1,40 @@
+// ==========================================================================
+// Variables
+// ==========================================================================
+
+// Colors
+$color-teal: #1a9e96;
+$color-teal-dark: #00a0a3;
+$color-dark: #010101;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-gray-light: #ecebe4;
+$color-gray-medium: #d9d9d9;
+$color-gray-text: #4a4a4a;
+$color-beige: #ece8e0;
+$color-transparent: rgba(255, 255, 255, 0);
+
+// Typography
+$font-main: 'Montserrat', Arial, sans-serif;
+$font-size-base: 16px;
+$font-size-h1: 48px;
+$font-size-h2: 32px;
+$font-size-h3: 20px;
+
+// Spacing
+$container-width: 1200px;
+$container-padding: 20px;
+$section-padding-y: 120px;
+
+// Breakpoints
+$bp-desktop: 1200px;
+$bp-tablet: 992px;
+$bp-mobile: 576px;
+
+// Borders / shadows
+$border-radius-sm: 6px;
+$border-radius-md: 12px;
+$shadow-card: 0 10px 30px rgba($color-black, 0.08);
+
+// Transitions
+$transition-base: all 0.25s ease;

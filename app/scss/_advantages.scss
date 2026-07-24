@@ -1,0 +1,103 @@
+// ==========================================================================
+// Block: Advantages (.advantages) — "Наши преимущества"
+// ==========================================================================
+
+.advantages {
+  padding: $section-padding-y 0;
+
+  &__title {
+    font-size: $font-size-h2;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding-left: 0;
+    list-style-type: none;
+
+    .swiper-wrapper {
+      flex-wrap: wrap;
+      width: 100%;
+      display: flex;
+
+      .swiper-slide {
+        width: 33.3%;
+      }
+    }
+  }
+
+  @include respond-to(tablet) {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @include respond-to(mobile) {
+    &__list {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+// Element/Mixed-block: Advantage card (.advantage-card)
+.advantage-card {
+  position: relative;
+  padding: 32px;
+  background-color: $color-white;
+  min-height: 220px;
+  border-radius: 8px;
+
+  &__title {
+    font-size: $font-size-h3;
+    font-weight: 700;
+    margin-bottom: 16px;
+    max-width: 80%;
+  }
+
+  &__description {
+    font-size: 13px;
+    color: $color-gray-text;
+    max-width: 90%;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    width: 32px;
+    height: 32px;
+  }
+
+  // Modifier: filled (teal background) card variant
+  &--filled {
+    background-color: $color-teal;
+    color: $color-white;
+
+    .advantage-card__title,
+    .advantage-card__description {
+      color: $color-white;
+    }
+  }
+}
+
+.advantage-card--filled {
+  background-color: #00A0A3;
+}
+
+.advantage-card-gray {
+  background-color: #ECEBE4;
+}
+
+.advantage-card-white {
+  background-color: #F8F8F8;
+}
+
+.advantages-item-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

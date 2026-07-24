@@ -1,0 +1,74 @@
+// ==========================================================================
+// Block: CTA Banner (.cta-banner) — final "Запишитесь на пробное занятие"
+// ==========================================================================
+
+.cta-banner {
+  padding: $section-padding-y 0;
+
+  &__text {
+    flex: 1;
+  }
+
+  &-wrap {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__title {
+    font-size: $font-size-h2;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $color-white;
+    margin-bottom: 12px;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    color: rgba($color-white, 0.85);
+  }
+
+  &__form {
+    width: 670px;
+  }
+
+  &__container {
+    position: relative;
+    background-color: #00a0a3;
+    padding: 40px;
+    border-radius: 16px;
+  }
+
+  @include respond-to(tablet) {
+    &__container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__form {
+      flex: 1;
+      width: 100%;
+    }
+  }
+}
+
+.cta-banner-svg {
+  position: absolute;
+  transform: translateY(-50%) translateX(-50%);
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+}
+
+.cta-banner-wrap {
+  position: relative;
+}
+
+.cta-banner__text {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-banner__form {
+  position: relative;
+  z-index: 1;
+}

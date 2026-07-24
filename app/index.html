@@ -1,1 +1,430 @@
-@@include('html/header.html',{"title":"OREXIS"}) @@include('html/footer.html')
+@@include('html/header.html',{"title":"OREXIS"})
+<body>
+
+  <main class="page-content">
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" aria-label="Главный экран">
+      <div class="container">
+
+        <div class="hero-container">
+          <div class="hero__media">
+            <img src="@img/hero.jpg" alt="Тренировка по спортивной гимнастике в зале OREXIS" class="hero__image">
+
+            <ul class="hero__tags tags">
+              <li class="tags__item"><span class="tags__badge">Прыгаем сальто</span></li>
+              <li class="tags__item"><span class="tags__badge">Ходим на руках</span></li>
+              <li class="tags__item"><span class="tags__badge tags__badge--accent">Садимся на шпагаты</span></li>
+            </ul>
+          </div>
+
+          <aside class="hero__form form-card" aria-label="Форма записи на пробное занятие">
+            <h2 class="form-card__title">запишитесь на пробное занятие</h2>
+            <p class="form-card__subtitle">Познакомим со студией и форматом обучения</p>
+
+            <form class="form-card__form" action="#" method="post">
+                <input class="form-card__input" type="text" id="hero-name" name="name" placeholder="Имя" required>
+                <input class="form-card__input" type="tel" id="hero-phone" name="phone" placeholder="Телефон" required>
+              <button type="submit" class="btn btn--primary form-card__submit">Оставить заявку</button>
+              
+             
+
+
+              <label class="form-card__checkbox-label">
+                <input class="form-card__checkbox" type="checkbox" name="agreement" required>
+                <span class="form-card__checkbox-text">
+                  Я даю согласие на обработку моей персональной информации на условиях, определённых Политикой конфиденциальности
+                </span>
+              </label>
+
+            </form>
+          </aside>
+
+          <p class="hero__caption">
+            Спортивная гимнастика и акробатика<br>
+            для взрослых с любым уровнем подготовки
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="container">
+        <div class="intro-wrapper">
+          <div class="intro__text">
+            <h2 class="intro__title" id="intro-title">Начать может каждый</h2>
+            <p class="intro__paragraph">
+              Научим прыгать сальто, уверенно стоять на руках, садиться на шпагат и работать с собственным весом.
+            </p>
+            <p class="intro__paragraph">
+              Спортивная гимнастика развивает силу, координацию и гибкость, а тренировки на снарядах помогают почувствовать и контролировать своё тело.
+            </p>
+            <p class="intro__paragraph">
+              С тобой работают профессиональные тренеры, а оборудование GYMNOVA делает тренировки безопасными и эффективными.
+            </p>
+          </div>
+
+          <div class="intro__gallery">
+            <figure class="intro__photo intro__photo--1">
+              <img src="@img/intro-1.jpg" alt="Тренер выполняет упражнение на кольцах" class="intro__image">
+            </figure>
+
+            <div class="intro__col">
+              <figure class="intro__photo intro__photo--2">
+                <img src="@img/intro-2.jpg" alt="Растяжка на гимнастическом мате" class="intro__image">
+              </figure>
+              <div class="intro__logo-card">
+                <img src="@img/intro-3.svg" alt="orexis" class="intro__image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="programs" id="programs" aria-labelledby="programs-title">
+      <div class="container">
+        <div class="programs__container">
+          <h2 class="programs__title" id="programs-title">Программы</h2>
+
+          <ul class="programs__list">
+            <li class="programs__item program-card">
+              <img src="@img/program-1.jpg" alt="Стойка на руках" class="program-card__image">
+
+              <div class="program-block">
+                <h3 class="program-card__title">Vital Energy</h3>
+                <p class="program-card__description">
+                  Комплексная тренировка на гимнастических снарядах, а также растяжка и акробатика
+                </p>
+                <div class="program-card__actions">
+                  <button type="button" class="btn btn__default btn_blue">Видео-обзор</button>
+                  <button type="button" class="btn btn__default btn_white">Подробнее</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="programs__item program-card">
+              <img src="@img/program-2.jpg" alt="Акробатический элемент — колесо назад" class="program-card__image">
+              <div class="program-block">
+                <h3 class="program-card__title">Acrobatics</h3>
+                <p class="program-card__description">
+                  Интенсивная тренировка с упором на изучение различных акробатических элементов (кувырки, стойки на руках, колеса, мостики, сальто и многое другое)
+                </p>
+                <div class="program-card__actions">
+                  <button type="button" class="btn btn__default btn_blue">Видео-обзор</button>
+                  <button type="button" class="btn btn__default btn_white">Подробнее</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="programs__item program-card">
+              <img src="@img/program-3.jpg" alt="Растяжка на шпагат" class="program-card__image">
+              <div class="program-block">
+                <h3 class="program-card__title">Agile Body</h3>
+                <p class="program-card__description">
+                  Мягкая гимнастическая растяжка, направленная на улучшение осанки, развитие гибкости и освоение таких элементов, как шпагаты, мостики и перевороты
+                </p>
+                <div class="program-card__actions">
+                  <button type="button" class="btn btn__default btn_blue">Видео-обзор</button>
+                  <button type="button" class="btn btn__default btn_white">Подробнее</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="programs__item program-card">
+              <img src="@img/program-4.jpg" alt="Асана мостик на занятии йогой" class="program-card__image">
+              <div class="program-block">
+                <h3 class="program-card__title">Йога</h3>
+                <p class="program-card__description">
+                  Сочетание классической, хатха-йоги, медитации и дыхательных практик
+                </p>
+                <div class="program-card__actions">
+                  <button type="button" class="btn btn__default btn_blue">Видео-обзор</button>
+                  <button type="button" class="btn btn__default btn_white">Подробнее</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages" aria-labelledby="advantages-title">
+      <div class="container">
+        <div class="advantages__container">
+          <h2 class="advantages__title" id="advantages-title">Наши преимущества</h2>
+
+          <ul class="advantages__list advantages__list-swiper">
+              <div class="swiper-slide">
+                <li class="advantages__item advantage-card advantage-card--filled">
+                  <div class="advantages-item-list">
+                    <h3 class="advantage-card__title">Уникальная программа</h3>
+                    <img src="@img/adv-1.svg" alt="">
+                  </div>
+                  <p class="advantage-card__description">
+                    Сочетание координационных, силовых, аэробных упражнений и растяжка в одном занятии гармонично тренируют все группы мышц, приносит быстрый результат и отличное настроение
+                  </p>
+                  <span class="advantage-card__icon" aria-hidden="true"></span>
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="advantages__item advantage-card advantage-card-gray">
+                  <div class="advantages-item-list">
+                    <h3 class="advantage-card__title">Группы не более 8 человек</h3>
+                    <img src="@img/adv-2.svg" alt="">
+                  </div>
+                  <p class="advantage-card__description">
+                    Групповые тренировки не более 8 человек или персональные занятия позволяют тренеру найти индивидуальный подход к каждому
+                  </p>
+                  <span class="advantage-card__icon" aria-hidden="true"></span>
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="advantages__item advantage-card advantage-card-white">
+                  <div class="advantages-item-list">
+                    <h3 class="advantage-card__title">Профессиональное оборудование</h3>
+                    <img src="@img/adv-3.svg" alt="">
+                  </div>
+                  <p class="advantage-card__description">
+                    В нашей студии используется современное, безопасное гимнастическое оборудование GYMNOVA, позволяющее заниматься посетителям с любым уровнем подготовки
+                  </p>
+                  <span class="advantage-card__icon" aria-hidden="true"></span>
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="advantages__item advantage-card advantage-card-gray">
+                  <div class="advantages-item-list">
+                    <h3 class="advantage-card__title">Индивидуальные занятия</h3>
+                    <img src="@img/adv-4.svg" alt="">
+                  </div>
+                  <p class="advantage-card__description">
+                    Вы можете выбрать удобное время для персонального занятия с тренером, который подберёт для вас программу тренировок для достижения ваших целей
+                  </p>
+                  <span class="advantage-card__icon" aria-hidden="true"></span>
+                </li>
+              </div>
+
+              <div class="swiper-slide">
+                <li class="advantages__item advantage-card advantage-card-white">
+                  <div class="advantages-item-list">
+                    <h3 class="advantage-card__title">Кастомные программы</h3>
+                    <img src="@img/adv-5.svg" alt="">
+                  </div>
+                  <p class="advantage-card__description">
+                    Тренировки по любому вашему запросу: можно заниматься отдельными группами, проводить корпоративные мероприятия, формировать нагрузку под специальный запрос
+                  </p>
+                  <span class="advantage-card__icon" aria-hidden="true"></span>
+                </li>
+              </div>
+
+              <div class="swiper-slide">
+                <li class="advantages__item advantage-card advantage-card--filled">
+                  <div class="advantages-item-list">
+                    <h3 class="advantage-card__title">Соревнования</h3>
+                    <img src="@img/adv-6.svg" alt="">
+                  </div>
+                  <p class="advantage-card__description">
+                    У вас будет уникальная возможность выступить на наших внутренних турнирах по спортивной гимнастике для того, чтобы продемонстрировать результат и встать на пьедестал
+                  </p>
+                  <span class="advantage-card__icon" aria-hidden="true"></span>
+                </li>
+              </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="community" aria-labelledby="community-title">
+      <div class="container">
+        <div class="community-wrap">
+          <div class="community__text">
+            <h2 class="community__title" id="community-title">У нас занимаются люди разного:</h2>
+
+            <ul class="community__features">
+              <li class="community__feature">
+                <img src="@img/list-logo.svg" alt="">
+                <span>возраста</span>
+              </li>
+              <li class="community__feature">
+                <img src="@img/list-logo.svg" alt="">  
+                <span>комплекции</span>
+              </li>
+              <li class="community__feature">
+                <img src="@img/list-logo.svg" alt="">
+                <span>уровня физической подготовки</span>
+              </li>
+            </ul>
+
+            <p class="community__paragraph">
+              Вы можете начать тренировки, даже если вы ранее не занимались спортом. Тренер поможет вам мягко влиться в тренировочный процесс. Обучение идет поэтапно через подводящие элементы, со страховкой тренера. Это поможет вам безопасно освоить различные элементы. 
+            </p>
+          </div>
+
+          <div class="community-gallery">
+            <div class="community-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="@img/com-1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="@img/com-2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="@img/com-1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="@img/com-2.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery__controls">
+
+              <div class="gallery__button">
+                <a href="#" class="btn btn__default btn_blue">Записаться</a>
+              </div>
+
+              <div class="gallery__arrows">
+                <button type="button" class="gallery__control gallery__control--prev" aria-label="Предыдущее фото">
+                  <img src="@img/arrow-com.svg" alt="">
+                </button>
+                <button type="button" class="gallery__control gallery__control--next" aria-label="Следующее фото">
+                  <img src="@img/arrow-com.svg" alt="">
+                </button>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== REVIEWS ==================== -->
+    <section class="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="reviews__container">
+          <h2 class="reviews__title" id="reviews-title">
+            Что о нас <span class="reviews__title-accent">говорят</span>
+          </h2>
+
+          <div class="reviews__list reviews-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="reviews__item review-card">
+                  <div class="review-card__header">
+                    <span class="review-card__avatar" aria-hidden="true"></span>
+                    <span class="review-card__author">Ирина Мамаева</span>
+                  </div>
+                  <p class="review-card__text">
+                    Я в восторге!!! В далеком детстве занималась гимнастикой несколько лет, но забросила, а недавно вдруг вспомнила школьные годы, решила вновь попробовать. Я очень удивилась, что тело помнит многие упражнения! Что-то, конечно, с трудом, но в мостик, оказывается, до сих пор встаю легко)) Тренеры классные, все подробно объясняют и на своем примере показывают, была у Лены и Насти — обе мне понравились
+                  </p>
+                  <div class="review-card__rating" aria-label="Оценка: 5 из 5">★★★★★</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__item review-card">
+                  <div class="review-card__header">
+                    <span class="review-card__avatar" aria-hidden="true"></span>
+                    <span class="review-card__author">Андрей Ильяхов</span>
+                  </div>
+                  <p class="review-card__text">
+                    Хочу отметить работу Баранова Сергея! Попал к нему на занятие случайно (было удобное время), но теперь хочу только к нему. Профессионал своего дела, досконально объясняет технику каждого упражнения, тренировки не похожи друг на друга, т.к. он всегда придумывает что-то новое. Всегда мотивирует Программа Wild Power у него — огонь! Занимаюсь чуть больше месяца для себя, чтобы поддерживать форму и не терять мышцы — по уровню нагрузки то, что нужно, чтобы не убиться на занятии
+                  </p>
+                  <div class="review-card__rating" aria-label="Оценка: 5 из 5">★★★★★</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__item review-card">
+                  <div class="review-card__header">
+                    <span class="review-card__avatar" aria-hidden="true"></span>
+                    <span class="review-card__author">Андрей Ильяхов</span>
+                  </div>
+                  <p class="review-card__text">
+                    Хочу отметить работу Баранова Сергея! Попал к нему на занятие случайно (было удобное время), но теперь хочу только к нему. Профессионал своего дела, досконально объясняет технику каждого упражнения, тренировки не похожи друг на друга, т.к. он всегда придумывает что-то новое. Всегда мотивирует Программа Wild Power у него — огонь! Занимаюсь чуть больше месяца для себя, чтобы поддерживать форму и не терять мышцы — по уровню нагрузки то, что нужно, чтобы не убиться на занятии
+                  </p>
+                  <div class="review-card__rating" aria-label="Оценка: 5 из 5">★★★★★</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__item review-card">
+                  <div class="review-card__header">
+                    <span class="review-card__avatar" aria-hidden="true"></span>
+                    <span class="review-card__author">Андрей Ильяхов</span>
+                  </div>
+                  <p class="review-card__text">
+                    Хочу отметить работу Баранова Сергея! Попал к нему на занятие случайно (было удобное время), но теперь хочу только к нему. Профессионал своего дела, досконально объясняет технику каждого упражнения, тренировки не похожи друг на друга, т.к. он всегда придумывает что-то новое. Всегда мотивирует Программа Wild Power у него — огонь! Занимаюсь чуть больше месяца для себя, чтобы поддерживать форму и не терять мышцы — по уровню нагрузки то, что нужно, чтобы не убиться на занятии
+                  </p>
+                  <div class="review-card__rating" aria-label="Оценка: 5 из 5">★★★★★</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__item review-card">
+                  <div class="review-card__header">
+                    <span class="review-card__avatar" aria-hidden="true"></span>
+                    <span class="review-card__author">Андрей Ильяхов</span>
+                  </div>
+                  <p class="review-card__text">
+                    Хочу отметить работу Баранова Сергея! Попал к нему на занятие случайно (было удобное время), но теперь хочу только к нему. Профессионал своего дела, досконально объясняет технику каждого упражнения, тренировки не похожи друг на друга, т.к. он всегда придумывает что-то новое. Всегда мотивирует Программа Wild Power у него — огонь! Занимаюсь чуть больше месяца для себя, чтобы поддерживать форму и не терять мышцы — по уровню нагрузки то, что нужно, чтобы не убиться на занятии
+                  </p>
+                  <div class="review-card__rating" aria-label="Оценка: 5 из 5">★★★★★</div>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="reviews__footer">
+              <button type="button" class="btn btn--primary reviews__btn">Оставить отзыв</button>
+
+              <div class="reviews__controls">
+                <button type="button" class="reviews__control reviews__control--prev" aria-label="Предыдущий отзыв">
+                  <img src="@img/arrow-com.svg" alt="">
+
+                </button>
+                <button type="button" class="reviews__control reviews__control--next" aria-label="Следующий отзыв">
+                  <img src="@img/arrow-com.svg" alt="">
+
+                </button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner" aria-labelledby="cta-title">
+      <div class="container">
+
+        <div class="cta-banner__container">
+          <div class="cta-banner-wrap">
+          <img src="@img/logo-orex.svg" class="cta-banner-svg" alt="">
+
+            <div class="cta-banner__text">
+              <h2 class="cta-banner__title" id="cta-title">Запишитесь на пробное занятие</h2>
+              <p class="cta-banner__subtitle">Познакомим со студией и форматом обучения</p>
+            </div>
+
+            <form class="cta-banner__form form-card form-card--light" action="#" method="post">
+              <label class="form-card__label visually-hidden" for="cta-name">Имя</label>
+              <input class="form-card__input" type="text" id="cta-name" name="name" placeholder="Имя" required>
+
+              <label class="form-card__label visually-hidden" for="cta-phone">Телефон</label>
+              <input class="form-card__input" type="tel" id="cta-phone" name="phone" placeholder="Телефон" required>
+
+              <label class="form-card__checkbox-label">
+                <input class="form-card__checkbox" type="checkbox" name="agreement" required>
+                <span class="form-card__checkbox-text">
+                  Я даю согласие на обработку моей персональной информации на условиях, определённых Политикой конфиденциальности
+                </span>
+              </label>
+
+              <button type="submit" class="btn btn--primary form-card__submit">Оставить заявку</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
+
+@@include('html/footer.html')

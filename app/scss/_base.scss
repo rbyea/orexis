@@ -1,0 +1,32 @@
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.btn__default {
+  border-radius: 4px;
+  padding: 10px 30px;
+
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+.btn_blue {
+  background-color: $color-teal-dark;
+}
+
+.btn_gray {
+  background-color: $color-gray-light;
+}
+
+.btn_white {
+  background-color: #fff;
+  color: #010101;
+  border: 1px solid #010101;
+}

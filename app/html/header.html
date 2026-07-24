@@ -13,5 +13,63 @@
 		<script type="module" src="@js/app.js" defer></script>
 	</head>
 
-	<body></body>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header-wrapper">
+					<a href="#" class="header__logo">
+						<img
+							src="img/logo.svg"
+							alt="Логотип OREXX"
+							class="header__logo-img"
+						/>
+					</a>
+
+					<nav class="header__nav">
+						<ul class="header__nav-list">
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link">Расписание</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link">Тренеры</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link">Прайс</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#" class="header__nav-link">Сертификаты</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="header-phone">
+						<a href="tel:+74956496989" class="header__phone">
+							+7 (495) 649-69-89
+						</a>
+						<span>часы работы 10.00 – 21.00</span>
+					</div>
+
+					<div class="header__actions">
+						<div class="header__socials">
+							<a href="#">
+								<img src="@img/telegram.svg" alt="telegram" />
+							</a>
+							<a href="#">
+								<img src="@img/what.svg" alt="WhatsApp" />
+							</a>
+						</div>
+						<div class="header-buttons">
+							<a href="#" class="btn btn__default btn_blue">Заказать звонок</a>
+							<a href="#" class="btn btn__default btn_gray">Записаться</a>
+						</div>
+						<button class="header__burger" aria-label="Открыть меню">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+	</body>
 </html>

@@ -1,1 +1,92 @@
-// Тут будут стили для футера
+// ==========================================================================
+// Block: Site Footer (.site-footer)
+// ==========================================================================
+
+.site-footer {
+  background-color: $color-black;
+  color: $color-white;
+  padding: 48px 0;
+
+  &__container {
+    @include container;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+      "logo nav social"
+      "address nav social"
+      "copyright copyright copyright";
+    gap: 20px 40px;
+  }
+
+  &__logo {
+    grid-area: logo;
+
+    .logo__text {
+      color: $color-white;
+    }
+  }
+
+  &__nav {
+    grid-area: nav;
+  }
+
+  &__nav-list {
+    @include flex(flex-start, flex-start, row, 20px);
+    flex-wrap: wrap;
+  }
+
+  &__nav-link {
+    font-size: 12px;
+    color: rgba($color-white, 0.7);
+    transition: $transition-base;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+
+  &__address {
+    grid-area: address;
+    font-style: normal;
+    @include flex(flex-start, flex-start, column, 4px);
+    font-size: 11px;
+    color: rgba($color-white, 0.6);
+  }
+
+  &__phone {
+    font-weight: 700;
+    color: $color-white;
+    margin-top: 8px;
+  }
+
+  &__social {
+    grid-area: social;
+    @include flex(flex-start, center, row, 12px);
+  }
+
+  &__social-link {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+
+  &__copyright {
+    grid-area: copyright;
+    font-size: 10px;
+    color: rgba($color-white, 0.4);
+    border-top: 1px solid rgba($color-white, 0.15);
+    padding-top: 20px;
+  }
+
+  @include respond-to(tablet) {
+    &__container {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "logo"
+        "nav"
+        "address"
+        "social"
+        "copyright";
+    }
+  }
+}

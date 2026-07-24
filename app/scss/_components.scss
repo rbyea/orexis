@@ -1,0 +1,109 @@
+// ==========================================================================
+// Component: Button (.btn)
+// ==========================================================================
+html,
+body {
+  overflow-x: hidden;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: $border-radius-sm;
+  transition: $transition-base;
+  text-align: center;
+
+  &--primary {
+    background-color: $color-teal;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-teal-dark;
+    }
+  }
+
+  &--outline {
+    background-color: transparent;
+    color: $color-dark;
+    border: 1px solid $color-gray-medium;
+
+    &:hover {
+      border-color: $color-teal;
+      color: $color-teal;
+    }
+  }
+}
+
+// ==========================================================================
+// Component: Form card (.form-card) — used in hero and cta-banner
+// ==========================================================================
+
+.form-card {
+  background-color: $color-white;
+  border-radius: $border-radius-md;
+  box-shadow: $shadow-card;
+  padding: 32px;
+
+  &__title {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: $color-gray-text;
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    @include flex(flex-start, stretch, column, 20px);
+  }
+
+  &__input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid $color-gray-medium;
+    border-radius: $border-radius-sm;
+    font-size: 14px;
+    font-family: inherit;
+
+    &:focus {
+      outline: none;
+      border-color: $color-teal;
+    }
+  }
+
+  &__checkbox-label {
+    @include flex(flex-start, flex-start, row, 8px);
+    cursor: pointer;
+  }
+
+  &__checkbox {
+    margin-top: 3px;
+    flex-shrink: 0;
+  }
+
+  &__checkbox-text {
+    font-size: 11px;
+    color: $color-gray-text;
+    line-height: 1.4;
+  }
+
+  &__submit {
+    width: 100%;
+    margin-top: 4px;
+  }
+
+  // Modifier: light theme for use on colored (teal) background
+  &--light {
+    background-color: $color-white;
+  }
+}

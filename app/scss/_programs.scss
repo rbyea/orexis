@@ -1,0 +1,81 @@
+// ==========================================================================
+// Block: Programs (.programs)
+// ==========================================================================
+
+.programs {
+  &__title {
+    font-size: $font-size-h2;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  &__list {
+    padding-left: 0;
+    display: flex;
+    list-style-type: none;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+.program-block {
+  background-color: #F8F8F8;
+  padding: 20px;
+}
+
+// Element/Mixed-block: Program card (.program-card)
+.program-card {
+  width: 33.3%;
+
+  &__image {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: $border-radius-md;
+    margin-bottom: 4px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #010101;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 60px;
+    color: #010101;
+    flex-grow: 1;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .btn {
+      flex: 1;
+    }
+
+    .btn_blue {
+      padding: 13px 24px;
+    }
+
+    .btn_white {
+      padding: 13px 24px;
+    }
+  }
+
+  &__btn {
+    flex: 1;
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+}

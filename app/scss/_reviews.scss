@@ -1,0 +1,79 @@
+// ==========================================================================
+// Block: Reviews (.reviews) — "Что о нас говорят"
+// ==========================================================================
+
+.reviews {
+
+  &__title {
+    font-size: $font-size-h2;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  &__title-accent {
+    color: $color-teal;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin-bottom: 24px;
+    overflow: hidden;
+
+    .swiper-wrapper {
+      height: auto;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__control {
+    width: 32px;
+    height: 32px;
+    border: 1px solid $color-gray-medium;
+    border-radius: 50%;
+  }
+}
+
+// Element/Mixed-block: Review card (.review-card)
+.review-card {
+  background-color: $color-gray-light;
+  border-radius: $border-radius-md;
+  padding: 24px;
+
+  &__header {
+    @include flex(flex-start, center, row, 12px);
+    margin-bottom: 12px;
+  }
+
+  &__avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: $color-gray-medium;
+  }
+
+  &__author {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  &__text {
+    font-size: 13px;
+    color: $color-gray-text;
+    margin-bottom: 16px;
+  }
+
+  &__rating {
+    color: $color-teal;
+    font-size: 14px;
+  }
+}
+
+.reviews__item {
+  height: 100%;
+}

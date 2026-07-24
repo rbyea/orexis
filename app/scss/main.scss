@@ -1,9 +1,25 @@
 @use 'sass:math';
 
+
+// @import 'pages/*';
+
+@import 'variables';
 @import 'mixins';
+
 @import 'reset';
+
+// Reusable components (buttons, form-card)
+@import 'components';
+@import 'swiper';
+
+// Page sections (one file per section, in page order)
 @import 'base';
 @import 'header';
+@import 'hero';
+@import 'intro';
+@import 'programs';
+@import 'advantages';
+@import 'community';
+@import 'reviews';
+@import 'cta-banner';
 @import 'footer';
-
-@import 'pages/*';
