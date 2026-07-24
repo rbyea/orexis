@@ -22,6 +22,10 @@
 .program-block {
   background-color: #F8F8F8;
   padding: 20px;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 // Element/Mixed-block: Program card (.program-card)
@@ -33,8 +37,7 @@
     aspect-ratio: 3 / 4;
     max-height: 320px;
     object-fit: cover;
-    border-radius: $border-radius-md;
-    margin-bottom: 4px;
+    border-radius: 8px 8px 0 0;
   }
 
   &__title {
@@ -65,11 +68,11 @@
     }
 
     .btn_blue {
-      padding: 13px 24px;
+      padding: 13px 22px;
     }
 
     .btn_white {
-      padding: 13px 24px;
+      padding: 13px 22px;
     }
   }
 

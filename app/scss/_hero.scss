@@ -99,15 +99,37 @@
 
   &__badge {
     display: inline-block;
-    padding: 8px 16px;
-    background-color: rgba($color-white, 0.9);
-    border-radius: $border-radius-sm;
-    font-size: 13px;
+    padding: 10px 16px;
+    border-radius: 8px;
+
+    font-size: 18px;
     font-weight: 600;
 
     &--accent {
-      background-color: rgba($color-teal, 0.9);
       color: $color-white;
+    }
+  }
+
+  &__item {
+    &:first-child {
+      .tags__badge {
+        background-color: #00a0a3;
+        color: #fff;
+      }
+    }
+
+    &:nth-child(2) {
+      .tags__badge {
+        background: #ecebe4;
+        color: #010101;
+      }
+    }
+
+    &:last-child {
+      .tags__badge {
+        background-color: #d9f1f1;
+        color: #00a0a3;
+      }
     }
   }
 }

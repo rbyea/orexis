@@ -44,9 +44,10 @@ body {
 
 .form-card {
   background-color: $color-white;
-  border-radius: $border-radius-md;
-  box-shadow: $shadow-card;
-  padding: 32px;
+  padding: 20px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  border-radius: 8px;
 
   &__title {
     font-size: 28px;
@@ -73,7 +74,6 @@ body {
     border: 1px solid $color-gray-medium;
     border-radius: $border-radius-sm;
     font-size: 14px;
-    font-family: inherit;
 
     &:focus {
       outline: none;

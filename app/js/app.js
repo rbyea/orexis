@@ -1,6 +1,13 @@
 import { device_width, gsap_ease } from "@utils/constants.js"
 
 document.addEventListener("DOMContentLoaded", () => {
+	$(".program-block").matchHeight({
+		byRow: true,
+	})
+	$(".advantages__item").matchHeight({
+		byRow: true,
+	})
+
 	if (window.innerWidth < 1024) {
 		new Swiper(".advantages__list-swiper", {
 			slidesPerView: 3,
