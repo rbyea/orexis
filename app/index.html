@@ -6,7 +6,6 @@
     <!-- ==================== HERO ==================== -->
     <section class="hero" aria-label="Главный экран">
       <div class="container">
-
         <div class="hero-container">
           <div class="hero__media">
             <img src="@img/hero.jpg" alt="Тренировка по спортивной гимнастике в зале OREXIS" class="hero__image">
@@ -45,7 +44,6 @@
             для взрослых с любым уровнем подготовки
           </p>
         </div>
-
       </div>
     </section>
 
@@ -248,27 +246,29 @@
     <section class="community" aria-labelledby="community-title">
       <div class="container">
         <div class="community-wrap">
-          <div class="community__text">
-            <h2 class="community__title" id="community-title">У нас занимаются люди разного:</h2>
+          <div class="community-block ">
+            <div class="community__text">
+              <h2 class="community__title" id="community-title">У нас занимаются люди разного:</h2>
 
-            <ul class="community__features">
-              <li class="community__feature">
-                <img src="@img/list-logo.svg" alt="">
-                <span>возраста</span>
-              </li>
-              <li class="community__feature">
-                <img src="@img/list-logo.svg" alt="">  
-                <span>комплекции</span>
-              </li>
-              <li class="community__feature">
-                <img src="@img/list-logo.svg" alt="">
-                <span>уровня физической подготовки</span>
-              </li>
-            </ul>
+              <ul class="community__features">
+                <li class="community__feature">
+                  <img src="@img/list-logo.svg" alt="">
+                  <span>возраста</span>
+                </li>
+                <li class="community__feature">
+                  <img src="@img/list-logo.svg" alt="">  
+                  <span>комплекции</span>
+                </li>
+                <li class="community__feature">
+                  <img src="@img/list-logo.svg" alt="">
+                  <span>уровня физической подготовки</span>
+                </li>
+              </ul>
 
-            <p class="community__paragraph">
-              Вы можете начать тренировки, даже если вы ранее не занимались спортом. Тренер поможет вам мягко влиться в тренировочный процесс. Обучение идет поэтапно через подводящие элементы, со страховкой тренера. Это поможет вам безопасно освоить различные элементы. 
-            </p>
+              <p class="community__paragraph">
+                Вы можете начать тренировки, даже если вы ранее не занимались спортом. Тренер поможет вам мягко влиться в тренировочный процесс. Обучение идет поэтапно через подводящие элементы, со страховкой тренера. Это поможет вам безопасно освоить различные элементы. 
+              </p>
+            </div>
           </div>
 
           <div class="community-gallery">
@@ -322,7 +322,9 @@
               <div class="swiper-slide">
                 <div class="reviews__item review-card">
                   <div class="review-card__header">
-                    <span class="review-card__avatar" aria-hidden="true"></span>
+                    <span class="review-card__avatar" aria-hidden="true">
+                      <img src="@img/user.jpg" alt="">
+                    </span>
                     <span class="review-card__author">Ирина Мамаева</span>
                   </div>
                   <p class="review-card__text">
@@ -334,7 +336,9 @@
               <div class="swiper-slide">
                 <div class="reviews__item review-card">
                   <div class="review-card__header">
-                    <span class="review-card__avatar" aria-hidden="true"></span>
+                    <span class="review-card__avatar" aria-hidden="true">
+                      <img src="@img/user.jpg" alt="">
+                    </span>
                     <span class="review-card__author">Андрей Ильяхов</span>
                   </div>
                   <p class="review-card__text">
@@ -346,7 +350,9 @@
               <div class="swiper-slide">
                 <div class="reviews__item review-card">
                   <div class="review-card__header">
-                    <span class="review-card__avatar" aria-hidden="true"></span>
+                    <span class="review-card__avatar" aria-hidden="true">
+                      <img src="@img/user.jpg" alt="">
+                    </span>
                     <span class="review-card__author">Андрей Ильяхов</span>
                   </div>
                   <p class="review-card__text">
@@ -358,7 +364,9 @@
               <div class="swiper-slide">
                 <div class="reviews__item review-card">
                   <div class="review-card__header">
-                    <span class="review-card__avatar" aria-hidden="true"></span>
+                    <span class="review-card__avatar" aria-hidden="true">
+                      <img src="@img/user.jpg" alt="">
+                    </span>
                     <span class="review-card__author">Андрей Ильяхов</span>
                   </div>
                   <p class="review-card__text">
@@ -370,7 +378,9 @@
               <div class="swiper-slide">
                 <div class="reviews__item review-card">
                   <div class="review-card__header">
-                    <span class="review-card__avatar" aria-hidden="true"></span>
+                    <span class="review-card__avatar" aria-hidden="true">
+                      <img src="@img/user.jpg" alt="">
+                    </span>
                     <span class="review-card__author">Андрей Ильяхов</span>
                   </div>
                   <p class="review-card__text">
@@ -383,6 +393,17 @@
           </div>
            <div class="reviews__footer">
               <button type="button" class="btn btn--primary reviews__btn">Оставить отзыв</button>
+
+
+
+                            <div class="gallery__arrows">
+                <button type="button" class="gallery__control gallery__control--prev" aria-label="Предыдущее фото">
+                  <img src="@img/arrow-com.svg" alt="">
+                </button>
+                <button type="button" class="gallery__control gallery__control--next" aria-label="Следующее фото">
+                  <img src="@img/arrow-com.svg" alt="">
+                </button>  
+              </div>
 
               <div class="reviews__controls">
                 <button type="button" class="reviews__control reviews__control--prev" aria-label="Предыдущий отзыв">

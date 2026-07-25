@@ -7,14 +7,16 @@
 
   &__text {
     background-color: #F8F8F8;
-    border-radius: $border-radius-md;
+    border-radius: 8px;
     padding: 40px 20px;
   }
 
   &-wrapper {
+    overflow: hidden;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
+    position: relative;
   }
 
   &__title {
@@ -82,6 +84,20 @@
 
   &__text {
     flex: 1;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      pointer-events: none;
+      bottom: 100vh;
+      border-radius: 0 0 8px 8px;
+      background-color: #f8f8f8;
+      height: 100%;
+    }
   }
 }
 

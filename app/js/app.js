@@ -8,6 +8,24 @@ document.addEventListener("DOMContentLoaded", () => {
 		byRow: true,
 	})
 
+	$(".reviews__item").matchHeight({
+		byRow: true,
+	})
+
+	$(".community-height").matchHeight({
+		byRow: true,
+	})
+
+	$(".header__burger").on("click", function (e) {
+		e.preventDefault()
+
+		console.log("true")
+
+		$(this).toggleClass("active")
+
+		$(".header-dropdown").toggleClass("active")
+	})
+
 	if (window.innerWidth < 1024) {
 		new Swiper(".advantages__list-swiper", {
 			slidesPerView: 3,
