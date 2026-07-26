@@ -255,6 +255,105 @@ a.social-mob {
     display: none;
   }
 
+  .header-dropdown-list {
+    display: none;
+  }
+
+  .header-dropdown-wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .header-dropdown__col {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header-dropdown {
+    padding: 20px;
+    bottom: 0;
+    height: calc(100vh - 80px);
+    top: 80px;
+  }
+
+  .header-dropdown-under {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+  }
+
+  .header-dropdown-phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+
+    span {
+      opacity: 0.63;
+      font-weight: 400;
+      font-size: 12px;
+      color: #010101;
+    }
+  }
+
+  .header-dropdown-social {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    a {
+      display: inline-flex;
+      width: 32px;
+      justify-content: center;
+      align-items: center;
+      height: 32px;
+      border-radius: 6px;
+      background: #ecebe4;
+    }
+  }
+
+  .header-dropdown__buttons {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .btn {
+      flex: 1;
+      font-size: 14px;
+    }
+  }
+
+  .header__phone {
+    font-weight: 400;
+    font-size: 14px;
+    color: #010101;
+  }
+
+  .header-dropdown-addr {
+    position: relative;
+    top: -5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #010101;
+
+    span {
+      opacity: 0.63;
+      font-weight: 400;
+      font-size: 12px;
+      color: #010101;
+    }
+  }
+
   .header-phone {
     display: none;
   }
@@ -288,5 +387,38 @@ a.social-mob {
       background: #00a0a3;
       color: #fff;
     }
+  }
+
+  .header-dropdown__link {
+    font-weight: 600;
+  }
+
+  .header-dropdown {
+    .container {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .header-dropdown-addr {
+    max-width: 170px;
+  }
+}
+
+@media (max-width: 379px) {
+  .header-dropdown__buttons {
+    flex-direction: column;
+
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .header-dropdown-under {
+    flex-direction: column;
+    gap: 20px;
   }
 }
