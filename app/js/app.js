@@ -26,6 +26,35 @@ document.addEventListener("DOMContentLoaded", () => {
 		$(".header-dropdown").toggleClass("active")
 	})
 
+	if (window.innerWidth < 1350) {
+		$(".programs__list .swiper-slide").wrapAll(
+			'<div class="swiper-wrapper"></div>',
+		)
+		new Swiper(".programs-swiper", {
+			slidesPerView: 3.2,
+			spaceBetween: 8,
+			slidesPerGroup: 1,
+			navigation: {
+				nextEl: ".programs__control--next",
+				prevEl: ".programs__control--prev",
+			},
+			breakpoints: {
+				320: {
+					slidesPerView: 1.05,
+				},
+				640: {
+					slidesPerView: 1.05,
+				},
+				768: {
+					slidesPerView: 2.05,
+				},
+				1024: {
+					slidesPerView: 3.2,
+				},
+			},
+		})
+	}
+
 	if (window.innerWidth < 1024) {
 		new Swiper(".advantages__list-swiper", {
 			slidesPerView: 3,

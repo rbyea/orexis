@@ -20,7 +20,7 @@
 }
 
 .program-block {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   padding: 20px;
   border-radius: 0 0 8px 8px;
   display: flex;
@@ -80,5 +80,79 @@
     flex: 1;
     padding: 10px 12px;
     font-size: 12px;
+  }
+}
+
+.programs-title-arrows {
+  display: none;
+}
+
+.programs__list {
+  width: 100%;
+
+  .swiper-slide {
+    width: 33.3%;
+    height: 100% !important;
+    flex-shrink: initial;
+
+    .program-card {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1460px) {
+  .program-card__actions .btn_blue {
+    padding: 11px 14px;
+  }
+
+  .programs__list {
+    width: 100%;
+
+    .swiper-slide {
+      width: 33.3%;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .program-card__actions .btn_white {
+    padding: 11px 14px;
+  }
+
+  .program-card__description {
+    font-size: 16px;
+  }
+
+  .program-card__title {
+    font-size: 22px;
+  }
+
+  .programs__list .swiper-slide {
+    flex-shrink: 0;
+  }
+
+  .programs__title {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  .programs-title-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .programs__control--next {
+    img {
+      transform: rotate(-180deg);
+      position: relative;
+      right: -2px;
+    }
+  }
+
+  .programs-title-arrows {
+    display: block;
   }
 }

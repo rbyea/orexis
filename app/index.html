@@ -25,10 +25,6 @@
                 <input class="form-card__input" type="text" id="hero-name" name="name" placeholder="Имя" required>
                 <input class="form-card__input" type="tel" id="hero-phone" name="phone" placeholder="Телефон" required>
               <button type="submit" class="btn btn--primary form-card__submit">Оставить заявку</button>
-              
-             
-
-
               <label class="form-card__checkbox-label">
                 <input class="form-card__checkbox" type="checkbox" name="agreement" required>
                 <span class="form-card__checkbox-text">
@@ -39,10 +35,16 @@
             </form>
           </aside>
 
-          <p class="hero__caption">
-            Спортивная гимнастика и акробатика<br>
-            для взрослых с любым уровнем подготовки
-          </p>
+
+          <div class="hero__caption">
+            <p>
+              Спортивная гимнастика и акробатика
+            </p>
+            <p>
+              для взрослых с любым уровнем подготовки
+            </p>
+          </div>
+
         </div>
       </div>
     </section>
@@ -65,14 +67,29 @@
 
           <div class="intro__gallery">
             <figure class="intro__photo intro__photo--1">
-              <img src="@img/intro-1.jpg" alt="Тренер выполняет упражнение на кольцах" class="intro__image">
+                <source
+                  srcset="@img/intro-m.jpg"
+                  media="(width <= 640px)" />
+                <img src="@img/intro-1.jpg" alt="Растяжка на гимнастическом мате" class="intro__image">
             </figure>
 
             <div class="intro__col">
               <figure class="intro__photo intro__photo--2">
-                <img src="@img/intro-2.jpg" alt="Растяжка на гимнастическом мате" class="intro__image">
+                <picture>
+                  <source
+                    srcset="@img/intro-m-2.jpg"
+                    media="(width <= 340px)" />
+                  <img src="@img/intro-2.jpg" alt="Растяжка на гимнастическом мате" class="intro__image">
+                </picture>
+                
               </figure>
               <div class="intro__logo-card">
+                <img src="@img/intro-3.svg" alt="orexis" class="intro__image">
+              </div>
+            </div>
+
+            <div class="intro__logo-card-mob">
+              <div class="intro__logo-card ">
                 <img src="@img/intro-3.svg" alt="orexis" class="intro__image">
               </div>
             </div>
@@ -85,75 +102,95 @@
     <section class="programs" id="programs" aria-labelledby="programs-title">
       <div class="container">
         <div class="programs__container">
-          <h2 class="programs__title" id="programs-title">Программы</h2>
+          <div class="programs-title-list">
+            <h2 class="programs__title" id="programs-title">Программы</h2>
+            <div class="programs-title-arrows">
+                <button type="button" class="gallery__control programs__control--prev" aria-label="Предыдущее">
+                  <img src="@img/arrow-com.svg" alt="">
+                </button>
+                <button type="button" class="gallery__control programs__control--next" aria-label="Следующее">
+                  <img src="@img/arrow-com.svg" alt="">
+                </button>  
+            </div>
+          </div>
 
-          <ul class="programs__list">
-            <li class="programs__item program-card">
-              <img src="@img/program-1.jpg" alt="Стойка на руках" class="program-card__image">
+          <div class="programs__list programs-swiper">
 
-              <div class="program-block">
-                <div class="program-top-block">
-                  <h3 class="program-card__title">Vital Energy</h3>
-                  <p class="program-card__description">
-                    Комплексная тренировка на гимнастических снарядах, а также растяжка и акробатика
-                  </p>
-                </div>
+            <div class="swiper-slide">
+              <div class="programs__item program-card">
+                <img src="@img/program-1.jpg" alt="Стойка на руках" class="program-card__image">
 
-                <div class="program-card__actions">
-                  <button type="button" class="btn btn__default btn_blue">Видео-обзор</button>
-                  <button type="button" class="btn btn__default btn_white">Подробнее</button>
+                <div class="program-block">
+                  <div class="program-top-block">
+                    <h3 class="program-card__title">Vital Energy</h3>
+                    <p class="program-card__description">
+                      Комплексная тренировка на гимнастических снарядах, а также растяжка и акробатика
+                    </p>
+                  </div>
+
+                  <div class="program-card__actions">
+                    <button type="button" class="btn btn__default btn_blue">Видео-обзор</button>
+                    <button type="button" class="btn btn__default btn_white">Подробнее</button>
+                  </div>
                 </div>
               </div>
-            </li>
+            </div>
 
-            <li class="programs__item program-card">
-              <img src="@img/program-2.jpg" alt="Акробатический элемент — колесо назад" class="program-card__image">
-              <div class="program-block">
-                <div class="program-top-block">
-                  <h3 class="program-card__title">Acrobatics</h3>
-                  <p class="program-card__description">
-                    Интенсивная тренировка с упором на изучение различных акробатических элементов (кувырки, стойки на руках, колеса, мостики, сальто и многое другое)
-                  </p>
-                </div>
-                <div class="program-card__actions">
-                  <button type="button" class="btn btn__default btn_blue">Видео-обзор</button>
-                  <button type="button" class="btn btn__default btn_white">Подробнее</button>
+            <div class="swiper-slide">
+              <div class="programs__item program-card">
+                <img src="@img/program-2.jpg" alt="Акробатический элемент — колесо назад" class="program-card__image">
+                <div class="program-block">
+                  <div class="program-top-block">
+                    <h3 class="program-card__title">Acrobatics</h3>
+                    <p class="program-card__description">
+                      Интенсивная тренировка с упором на изучение различных акробатических элементов (кувырки, стойки на руках, колеса, мостики, сальто и многое другое)
+                    </p>
+                  </div>
+                  <div class="program-card__actions">
+                    <button type="button" class="btn btn__default btn_blue">Видео-обзор</button>
+                    <button type="button" class="btn btn__default btn_white">Подробнее</button>
+                  </div>
                 </div>
               </div>
-            </li>
+            </div>
 
-            <li class="programs__item program-card">
-              <img src="@img/program-3.jpg" alt="Растяжка на шпагат" class="program-card__image">
-              <div class="program-block">
-                <div class="program-top-block">
-                  <h3 class="program-card__title">Agile Body</h3>
-                  <p class="program-card__description">
-                    Мягкая гимнастическая растяжка, направленная на улучшение осанки, развитие гибкости и освоение таких элементов, как шпагаты, мостики и перевороты
-                  </p>
-                </div>
-                <div class="program-card__actions">
-                  <button type="button" class="btn btn__default btn_blue">Видео-обзор</button>
-                  <button type="button" class="btn btn__default btn_white">Подробнее</button>
+            <div class="swiper-slide">
+              <div class="programs__item program-card">
+                <img src="@img/program-3.jpg" alt="Растяжка на шпагат" class="program-card__image">
+                <div class="program-block">
+                  <div class="program-top-block">
+                    <h3 class="program-card__title">Agile Body</h3>
+                    <p class="program-card__description">
+                      Мягкая гимнастическая растяжка, направленная на улучшение осанки, развитие гибкости и освоение таких элементов, как шпагаты, мостики и перевороты
+                    </p>
+                  </div>
+                  <div class="program-card__actions">
+                    <button type="button" class="btn btn__default btn_blue">Видео-обзор</button>
+                    <button type="button" class="btn btn__default btn_white">Подробнее</button>
+                  </div>
                 </div>
               </div>
-            </li>
+            </div>
 
-            <li class="programs__item program-card">
-              <img src="@img/program-4.jpg" alt="Асана мостик на занятии йогой" class="program-card__image">
-              <div class="program-block">
-                <div class="program-top-block">
-                  <h3 class="program-card__title">Йога</h3>
-                  <p class="program-card__description">
-                    Сочетание классической, хатха-йоги, медитации и дыхательных практик
-                  </p>
-                </div>
-                <div class="program-card__actions">
-                  <button type="button" class="btn btn__default btn_blue">Видео-обзор</button>
-                  <button type="button" class="btn btn__default btn_white">Подробнее</button>
+            <div class="swiper-slide">
+              <div class="programs__item program-card">
+                <img src="@img/program-4.jpg" alt="Асана мостик на занятии йогой" class="program-card__image">
+                <div class="program-block">
+                  <div class="program-top-block">
+                    <h3 class="program-card__title">Йога</h3>
+                    <p class="program-card__description">
+                      Сочетание классической, хатха-йоги, медитации и дыхательных практик
+                    </p>
+                  </div>
+                  <div class="program-card__actions">
+                    <button type="button" class="btn btn__default btn_blue">Видео-обзор</button>
+                    <button type="button" class="btn btn__default btn_white">Подробнее</button>
+                  </div>
                 </div>
               </div>
-            </li>
-          </ul>
+            </div>
+
+          </idv>
         </div>
       </div>
     </section>
