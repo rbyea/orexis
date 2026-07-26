@@ -17,9 +17,10 @@
   &__title {
     font-size: 36px;
     font-weight: 400;
+    line-height: 1.2;
     text-transform: uppercase;
     color: $color-white;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
   }
 
   &__subtitle {
@@ -53,9 +54,10 @@
 
 .cta-banner-svg {
   position: absolute;
-  transform: translateY(-50%) translateX(-50%);
-  top: 50%;
-  left: 50%;
+  transform: translateY(-52%) translateX(-52%);
+  top: 41%;
+  left: 55%;
+  pointer-events: none;
   z-index: 0;
 }
 
@@ -89,7 +91,7 @@
 }
 
 .form-card__checkbox-label {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .form-card__submit {
@@ -109,8 +111,8 @@
   }
 
   .cta-banner-svg {
-    top: -95px;
-    left: -76px;
+    top: -77px;
+    left: -51px;
     transform: translateY(0);
   }
 

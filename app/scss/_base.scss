@@ -53,11 +53,23 @@ ul {
 
 .btn_blue {
   background-color: $color-teal-dark;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background-color: rgba(0, 160, 163, 0.2);
+    color: #00a0a3;
+  }
 }
 
 .btn_gray {
   background-color: $color-gray-light;
   color: #010101;
+
+  &:hover {
+    background-color: #f8f8f8;
+    color: #010101;
+
+  }
 }
 
 .btn_white {

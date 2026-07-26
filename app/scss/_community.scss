@@ -46,12 +46,13 @@
     font-size: 36px;
     font-weight: 400;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 55px;
+    line-height: 1.3;
   }
 
   &__features {
     padding-left: 0;
-    margin-bottom: 40px;
+    margin-bottom: 47px;
     display: flex;
     flex-direction: column;
   }
@@ -61,19 +62,23 @@
     padding-left: 0;
     font-weight: 400;
     font-size: 20px;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     list-style-type: none;
     display: inline-flex;
     gap: 16px;
   }
 
   &__paragraph {
-    font-size: 14px;
-    color: $color-gray-text;
+    font-size: 20px;
+    color: #010101;
 
     font-weight: 400;
-    font-size: 20px;
-    line-height: 1.3;
+    line-height: 1.4;
   }
 }
 
@@ -183,12 +188,10 @@
   .community-block:before {
     display: none;
   }
-}
 
-@include respond-to(tablet) {
   .community {
     padding-bottom: 30px;
-    padding-top: 30px;
+    padding-top: 60px;
   }
 
   .community__features {
