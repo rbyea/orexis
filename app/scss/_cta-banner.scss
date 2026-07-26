@@ -15,16 +15,16 @@
   }
 
   &__title {
-    font-size: $font-size-h2;
-    font-weight: 800;
+    font-size: 36px;
+    font-weight: 400;
     text-transform: uppercase;
     color: $color-white;
     margin-bottom: 12px;
   }
 
   &__subtitle {
-    font-size: 14px;
-    color: rgba($color-white, 0.85);
+    font-size: 18px;
+    color: #fff;
   }
 
   &__form {
@@ -71,4 +71,89 @@
 .cta-banner__form {
   position: relative;
   z-index: 1;
+  display: flex;
+  padding: 40px 20px;
+  margin-bottom: 0;
+  flex-direction: column;
+
+  .btn__default {
+    max-width: 223px;
+  }
+}
+
+.cta-banner-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.form-card__checkbox-label {
+  margin-bottom: 20px;
+}
+
+.form-card__submit {
+  margin-top: 0;
+}
+
+@media (max-width: 1200px) {
+  .cta-banner__form {
+    width: 490px;
+  }
+}
+
+@include respond-to(tablet) {
+  .cta-banner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .cta-banner-svg {
+    top: -95px;
+    left: -76px;
+    transform: translateY(0);
+  }
+
+  .cta-banner__title {
+    font-size: 24px;
+  }
+
+  .cta-banner__subtitle {
+    font-size: 16px;
+  }
+
+  .cta-banner__form {
+    padding: 12px;
+  }
+
+  .form-card__checkbox-text {
+    text-align: left;
+  }
+
+  .cta-banner__container {
+    padding: 20px;
+  }
+
+  .cta-banner-box {
+    .form-card__input {
+      border: none;
+      background-color: #f8f8f8;
+    }
+  }
+
+  .cta-banner-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-card__input {
+    padding: 16px;
+  }
+
+  .cta-banner__form .btn__default {
+    max-width: 100%;
+  }
 }

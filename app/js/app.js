@@ -56,26 +56,29 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 
 	if (window.innerWidth < 1024) {
+		$(".advantages__list .swiper-slide").wrapAll(
+			'<div class="swiper-wrapper"></div>',
+		)
 		new Swiper(".advantages__list-swiper", {
-			slidesPerView: 3,
+			slidesPerView: 3.1,
 			spaceBetween: 8,
-			slidesPerGroup: 3,
+			slidesPerGroup: 1,
+			navigation: {
+				nextEl: ".advantages__control--next",
+				prevEl: ".advantages__control--prev",
+			},
 			breakpoints: {
 				320: {
-					slidesPerView: 1,
-					slidesPerGroup: 1,
+					slidesPerView: 1.2,
 				},
 				640: {
-					slidesPerView: 1,
-					slidesPerGroup: 1,
+					slidesPerView: 1.2,
 				},
 				768: {
-					slidesPerView: 2,
-					slidesPerGroup: 2,
+					slidesPerView: 2.2,
 				},
 				1024: {
-					slidesPerView: 3,
-					slidesPerGroup: 3,
+					slidesPerView: 3.1,
 				},
 			},
 		})
@@ -89,6 +92,17 @@ document.addEventListener("DOMContentLoaded", () => {
 			nextEl: ".gallery__control--next",
 			prevEl: ".gallery__control--prev",
 		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1.2,
+			},
+			468: {
+				slidesPerView: 2,
+			},
+			1024: {
+				slidesPerView: 2,
+			},
+		},
 	})
 
 	new Swiper(".reviews-swiper", {
@@ -96,8 +110,22 @@ document.addEventListener("DOMContentLoaded", () => {
 		spaceBetween: 20,
 		slidesPerGroup: 1,
 		navigation: {
-			nextEl: ".gallery__control--next",
-			prevEl: ".gallery__control--prev",
+			nextEl: ".reviews__control--next",
+			prevEl: ".reviews__control--prev",
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1.2,
+				spaceBetween: 12,
+			},
+			650: {
+				slidesPerView: 2,
+				spaceBetween: 12,
+			},
+			1024: {
+				slidesPerView: 2,
+				spaceBetween: 12,
+			},
 		},
 	})
 })

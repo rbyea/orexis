@@ -9,6 +9,10 @@
 
 //
 
+img {
+  max-width: 100%;
+}
+
 @font-face {
   font-family: "MediatorSerifWeb";
   src:
@@ -43,6 +47,10 @@ p {
   color: #fff;
 }
 
+ul {
+  margin-bottom: 0;
+}
+
 .btn_blue {
   background-color: $color-teal-dark;
 }
@@ -56,4 +64,10 @@ p {
   background-color: #fff;
   color: #010101;
   border: 1px solid rgba(1, 1, 1, 0.4);
+}
+
+@include respond-to(tablet) {
+  .btn__default {
+    padding: 10px 26px;
+  }
 }
