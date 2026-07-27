@@ -14,18 +14,33 @@ img {
 }
 
 @font-face {
-  font-family: "MediatorSerifWeb";
+  font-family: "Mediator";
   src:
-    url("@fonts/MediatorSerifWeb-Regular.woff") format("woff"),
-    url("@fonts/MediatorSerifWeb-Regular.woff2") format("woff2");
+    url("../fonts/MDT55.otf") format("opentype");
   font-style: normal;
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "Mediator";
+  src:
+    url("../fonts/MDT75.otf") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Mediator";
+  src:
+    url("../fonts/MDT35.otf") format("opentype");
+  font-style: normal;
+  font-weight: 300;
+}
+
 body,
 html {
-  font-family: "Inter";
-  font-weight: 400 !important;
+  font-family: "Mediator", sans-serif;
+  font-weight: 400;
 }
 
 a {

@@ -55,7 +55,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 12px;
-    line-height: 1.2;
+    line-height: 1.4;
   }
 
   &__subtitle {
@@ -63,10 +63,15 @@ body {
     font-size: 16px;
     color: $color-gray-text;
     margin-bottom: 20px;
+    line-height: 1.2;
   }
 
   &__form {
     @include flex(flex-start, stretch, column, 20px);
+
+    .btn__default {
+      padding: 10px 26px;
+    }
   }
 
   &__input {
@@ -83,7 +88,7 @@ body {
   }
 
   &__checkbox-label {
-    @include flex(flex-start, flex-start, row, 8px);
+    @include flex(flex-start, flex-start, row, 17px);
     cursor: pointer;
   }
 
@@ -93,9 +98,10 @@ body {
   }
 
   &__checkbox-text {
-    font-size: 11px;
-    color: $color-gray-text;
-    line-height: 1.4;
+    font-size: 14px;
+    color: #010101;
+    font-weight: 300;
+    line-height: 1.5;
   }
 
   &__submit {

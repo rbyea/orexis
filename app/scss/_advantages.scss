@@ -57,8 +57,9 @@
 
   &__description {
     font-size: 18px;
+    font-weight: 400;
     color: $color-gray-text;
-    max-width: 90%;
+    line-height: 1.4;
   }
 
   &__icon {
@@ -105,7 +106,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 36px;
+  margin-bottom: 40px;
 }
 
 .advantages-title-arrows {
