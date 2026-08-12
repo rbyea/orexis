@@ -19,11 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
 	$(".header__burger").on("click", function (e) {
 		e.preventDefault()
 
-		console.log("true")
-
 		$(this).toggleClass("active")
-
 		$(".header-dropdown").toggleClass("active")
+		$("body").toggleClass("menu-open", $(".header-dropdown").hasClass("active"))
 	})
 
 	const $header = $(".header")

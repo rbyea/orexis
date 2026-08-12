@@ -6,6 +6,11 @@ body {
   overflow-x: hidden;
 }
 
+body.menu-open {
+  overflow: hidden;
+  touch-action: none;
+}
+
 .btn {
   border: none;
   cursor: pointer;
