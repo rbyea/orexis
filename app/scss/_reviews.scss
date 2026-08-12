@@ -5,11 +5,11 @@
 .reviews {
 
   &__title {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 400;
     line-height: 1.2;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   &__title-accent {
@@ -18,7 +18,7 @@
 
   &__list {
     list-style-type: none;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     overflow: hidden;
 
     .swiper-wrapper {
@@ -49,11 +49,11 @@
 .review-card {
   background-color: #f8f8f8;
   border-radius: 8px;
-  padding: 44px 20px;
+  padding: 28px 16px;
 
   &__header {
-    @include flex(flex-start, center, row, 27px);
-    margin-bottom: 20px;
+    @include flex(flex-start, center, row, 20px);
+    margin-bottom: 14px;
   }
 
   &__avatar {
@@ -65,21 +65,21 @@
 
   &__author {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     color: #010101;
   }
 
   &__text {
-    font-size: 16px;
+    font-size: 14px;
     color: #010101;
-    margin-bottom: 35px;
+    margin-bottom: 24px;
     line-height: 1.4;
   }
 
   &__rating {
     color: #00a0a3;
     line-height: 1;
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -97,23 +97,28 @@
 
 @include respond-to(tablet) {
   .reviews__title {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .review-card {
-    padding: 24px 16px;
+    padding: 20px 14px;
   }
 
   .review-card__author {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .review-card__header {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 
   .review-card__text {
-    font-size: 14px;
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+
+  .review-card__rating {
+    font-size: 18px;
   }
 
   .reviews {

@@ -4,56 +4,59 @@
 
 .programs {
   &__title {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 400;
     text-transform: uppercase;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
   }
 
   &__list {
     padding-left: 0;
     display: flex;
     list-style-type: none;
-    align-items: flex-start;
-    gap: 20px;
+    align-items: stretch;
+    gap: 8px;
   }
 }
 
 .program-block {
   background-color: #f8f8f8;
-  padding: 20px;
+  padding: 14px 12px;
   border-radius: 0 0 8px 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-grow: 1;
 }
 
 // Element/Mixed-block: Program card (.program-card)
 .program-card {
-  width: 33.3%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
 
   &__image {
     width: 100%;
     aspect-ratio: 3 / 4;
-    max-height: 320px;
+    max-height: 260px;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
   }
 
   &__title {
     font-weight: 400;
-    font-size: 28px;
+    font-size: 18px;
     line-height: 1.2;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     color: #010101;
   }
 
   &__description {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 13px;
     line-height: 140%;
-    margin-bottom: 60px;
+    margin-bottom: 24px;
     color: #010101;
     opacity: 0.8;
     flex-grow: 1;
@@ -62,26 +65,36 @@
   &__actions {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
 
     .btn {
       flex: 1;
+      font-size: 12px;
+      padding: 10px 8px;
     }
 
     .btn_blue {
-      padding: 13px 22px;
+      padding: 10px 8px;
     }
 
-    .btn_white {
-      padding: 13px 22px;
+    .btn_white,
+    .btn_transform {
+      padding: 10px 8px;
     }
   }
 
   &__btn {
     flex: 1;
-    padding: 10px 12px;
+    padding: 10px 8px;
     font-size: 12px;
   }
+}
+
+.programs-title-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .programs-title-arrows {
@@ -92,57 +105,25 @@
   width: 100%;
 
   .swiper-slide {
-    width: 33.3%;
-    height: 100% !important;
-    flex-shrink: initial;
+    width: 25%;
+    height: auto;
+    flex-shrink: 0;
 
     .program-card {
-      width: 100%;
-    }
-  }
-}
-
-@media (max-width: 1460px) {
-  .program-card__actions .btn_blue {
-    padding: 11px 14px;
-  }
-
-  .programs__list {
-    width: 100%;
-
-    .swiper-slide {
-      width: 33.3%;
       width: 100%;
       height: 100%;
     }
   }
+}
 
-  .program-card__actions .btn_white {
-    padding: 11px 14px;
-  }
-
-  .program-card__description {
-    font-size: 16px;
-  }
-
-  .program-card__title {
-    font-size: 22px;
-  }
-
-  .programs__list .swiper-slide {
-    flex-shrink: 0;
-  }
-
+@media (max-width: 1100px) {
   .programs__title {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 0;
   }
 
-  .programs-title-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 16px;
+  .programs-title-arrows {
+    display: block;
   }
 
   .programs__control--next {
@@ -153,7 +134,55 @@
     }
   }
 
-  .programs-title-arrows {
-    display: block;
+  .programs__list {
+    .swiper-slide {
+      width: 100%;
+      flex-shrink: 0;
+    }
+  }
+
+  .program-card {
+    width: 100%;
+
+    &__title {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      font-size: 13px;
+      margin-bottom: 28px;
+    }
+
+    &__actions {
+      .btn,
+      .btn_blue,
+      .btn_white,
+      .btn_transform {
+        padding: 10px 10px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .program-block {
+    padding: 14px 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .programs__title {
+    font-size: 18px;
+  }
+
+  .program-card {
+    &__title {
+      font-size: 15px;
+    }
+
+    &__description {
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
   }
 }

@@ -44,42 +44,44 @@ body {
 
 .form-card {
   background-color: #F8F8F8;
-  padding: 20px;
-  padding-top: 82px;
-  padding-bottom: 60px;
+  padding: 16px;
+  padding-top: 56px;
+  padding-bottom: 40px;
   border-radius: 8px;
 
   &__title {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     line-height: 1.4;
   }
 
   &__subtitle {
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     color: $color-gray-text;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     line-height: 1.2;
+    opacity: 0.6;
   }
 
   &__form {
-    @include flex(flex-start, stretch, column, 20px);
+    @include flex(flex-start, stretch, column, 14px);
 
     .btn__default {
-      padding: 10px 26px;
+      padding: 10px 22px;
+      font-size: 15px;
     }
   }
 
   &__input {
     width: 100%;
-    padding: 15px 16px;
+    padding: 12px 14px;
     border: 1px solid $color-gray-medium;
     border-radius: $border-radius-sm;
-    font-size: 14px;
+    font-size: 15px;
 
     &:focus {
       outline: none;
@@ -88,7 +90,7 @@ body {
   }
 
   &__checkbox-label {
-    @include flex(flex-start, flex-start, row, 17px);
+    @include flex(flex-start, flex-start, row, 14px);
     cursor: pointer;
   }
 
@@ -98,7 +100,7 @@ body {
   }
 
   &__checkbox-text {
-    font-size: 14px;
+    font-size: 13px;
     color: #010101;
     font-weight: 300;
     line-height: 1.5;

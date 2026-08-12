@@ -15,28 +15,30 @@
   }
 
   &__title {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 400;
     line-height: 1.2;
     text-transform: uppercase;
     color: $color-white;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 
   &__subtitle {
-    font-size: 18px;
+    font-size: 15px;
     color: #fff;
   }
 
   &__form {
-    width: 670px;
+    width: 48%;
+    max-width: 480px;
+    flex-shrink: 0;
   }
 
   &__container {
     position: relative;
     background-color: #00a0a3;
-    padding: 40px;
-    border-radius: 16px;
+    padding: 28px;
+    border-radius: 12px;
   }
 
   @include respond-to(tablet) {
@@ -48,12 +50,15 @@
     &__form {
       flex: 1;
       width: 100%;
+      max-width: none;
     }
   }
 }
 
 .cta-banner-svg {
   position: absolute;
+  width: 545px;
+  height: auto;
   transform: translateY(-52%) translateX(-52%);
   top: 41%;
   left: 55%;
@@ -74,7 +79,7 @@
   position: relative;
   z-index: 1;
   display: flex;
-  padding: 40px 20px;
+  padding: 28px 16px;
   margin-bottom: 0;
   flex-direction: column;
 
@@ -86,22 +91,22 @@
 .cta-banner-box {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-bottom: 20px;
+  gap: 10px;
+  margin-bottom: 16px;
+
+  .form-card__input {
+    border: none;
+    padding: 12px 14px;
+    background-color: #f8f8f8;
+  }
 }
 
 .form-card__checkbox-label {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .form-card__submit {
   margin-top: 0;
-}
-
-@media (max-width: 1200px) {
-  .cta-banner__form {
-    width: 490px;
-  }
 }
 
 @include respond-to(tablet) {
@@ -111,17 +116,18 @@
   }
 
   .cta-banner-svg {
-    top: -77px;
-    left: -51px;
+    width: 160px;
+    top: -60px;
+    left: -40px;
     transform: translateY(0);
   }
 
   .cta-banner__title {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .cta-banner__subtitle {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .cta-banner__form {
@@ -157,5 +163,11 @@
 
   .cta-banner__form .btn__default {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-banner-svg {
+    width: 98px;
   }
 }

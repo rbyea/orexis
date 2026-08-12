@@ -15,24 +15,21 @@ img {
 
 @font-face {
   font-family: "Mediator";
-  src:
-    url("../fonts/MDT55.otf") format("opentype");
+  src: url("../fonts/MDT55.otf") format("opentype");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Mediator";
-  src:
-    url("../fonts/MDT75.otf") format("opentype");
+  src: url("../fonts/MDT75.otf") format("opentype");
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Mediator";
-  src:
-    url("../fonts/MDT35.otf") format("opentype");
+  src: url("../fonts/MDT35.otf") format("opentype");
   font-style: normal;
   font-weight: 300;
 }
@@ -55,10 +52,10 @@ p {
 
 .btn__default {
   border-radius: 4px;
-  padding: 13px 26px;
+  padding: 11px 22px;
 
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   color: #fff;
 }
 
@@ -83,7 +80,6 @@ ul {
   &:hover {
     background-color: #f8f8f8;
     color: #010101;
-
   }
 }
 
@@ -93,8 +89,20 @@ ul {
   border: 1px solid rgba(1, 1, 1, 0.4);
 }
 
+.btn_transform {
+  background-color: rgba(255, 255, 255, 0);
+  color: #010101;
+  border: 1px solid rgba(1, 1, 1, 0.4);
+  transition: all 0.4s ease;
+
+  &:hover {
+    background-color: #fff;
+  }
+}
+
 @include respond-to(tablet) {
   .btn__default {
-    padding: 10px 26px;
+    padding: 10px 20px;
+    font-size: 14px;
   }
 }

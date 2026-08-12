@@ -26,12 +26,21 @@ document.addEventListener("DOMContentLoaded", () => {
 		$(".header-dropdown").toggleClass("active")
 	})
 
-	if (window.innerWidth < 1350) {
+	const $header = $(".header")
+
+	const toggleHeaderScroll = () => {
+		$header.toggleClass("scrolled", window.scrollY > 10)
+	}
+
+	toggleHeaderScroll()
+	$(window).on("scroll", toggleHeaderScroll)
+
+	if (window.innerWidth < 1101) {
 		$(".programs__list .swiper-slide").wrapAll(
 			'<div class="swiper-wrapper"></div>',
 		)
 		new Swiper(".programs-swiper", {
-			slidesPerView: 3.2,
+			slidesPerView: 3,
 			spaceBetween: 8,
 			slidesPerGroup: 1,
 			navigation: {
@@ -41,15 +50,19 @@ document.addEventListener("DOMContentLoaded", () => {
 			breakpoints: {
 				320: {
 					slidesPerView: 1.05,
+					spaceBetween: 8,
 				},
 				640: {
 					slidesPerView: 1.05,
+					spaceBetween: 8,
 				},
 				768: {
 					slidesPerView: 2.05,
+					spaceBetween: 8,
 				},
 				1024: {
-					slidesPerView: 3.2,
+					slidesPerView: 3,
+					spaceBetween: 8,
 				},
 			},
 		})
